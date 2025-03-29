@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/typedoc-plugin-react"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "pack": "npm run build && npm pack --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "typedoc": "^0.28.1",
+    "typedoc-plugin-markdown": "^4.6.0"
+  }
+}

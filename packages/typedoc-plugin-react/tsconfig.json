@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "Node16",
+        "moduleResolution": "Node16",
+        "lib": ["esnext", "dom"],
+        "target": "es2022",
+        "typeRoots": ["node_modules/@types"],
+        "declaration": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "removeComments": false,
+        "sourceMap": false,
+        "strictNullChecks": true,
+        "outDir": "./dist",
+        "baseUrl": "src",
+        "paths": {
+            "@plugin/*": ["./*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": ["./dist", "./test", "__scripts__", "**/*.spec.ts"]
+}
