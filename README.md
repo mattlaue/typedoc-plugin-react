@@ -6,7 +6,8 @@ fix-up the generated markdown of a React library.   The main use case is generat
 ## Installation
 
 ```shell
-npm install https://github.com/mattlaue/typedoc-plugin-react
+npm install 'https://gitpkg.now.sh/mattlaue/typedoc-plugin-react/packages/typedoc-plugin-react?main&scripts.postinstall=npm%20install%20--ignore-scripts%20%26%26%20npm%20run%20build'
+rm -rf node_modules/typedoc-plugin-react/node_modules
 ```
 
 ## Quickstart (Docusaurus)

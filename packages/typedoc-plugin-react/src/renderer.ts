@@ -7,10 +7,6 @@ export function onRendererEventBeginPage(event: PageEvent) {
     if (event.model && typeof event.model === "object") {
         (event.model as any).url = event.url;
     }
-
-    console.log(event.model.name)
-
-    // console.log('Renderer.EVENT_BEGIN_PAGE', event.url, event.filename, event.pageHeadings);
 }
 
 export function onRendererEventEndPage(event: PageEvent) {
